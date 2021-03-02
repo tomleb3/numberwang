@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Game!</title>
+    <link rel="icon" href="res/8bitFavicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+</head>
+
+<body onload="init()">
+
+    <header>
+        <h1> Number Game ! </h1>
+        <div class="score-text">
+            <h3></h3>
+            <h4 class="highest-score">Highest score -</h4>
+            <h4 class="highest-score-value"></h4>
+        </div>
+    </header>
+
+    <main>
+        <div class="sidenav">
+            <span class="gen closebtn" onclick="closeNav()"">&times;</span>
+            <div class=" modes-div">
+                <span style="cursor:none;">Mode:</span>
+                <span class="easy-btn" onclick="tableSize(16)">Easy<br>(4x4)</span>
+                <span class="medium-btn" onclick="tableSize(25)">Medium<br>(5x5)</span>
+                <span class="hard-btn" onclick="tableSize(36)">Hard<br>(6x6)</span>
+                <span class="sicko-btn" onclick="tableSize(64)">Sicko!</span>
+        </div>
+        <div class="scores-div">
+            <span>Highscores: <br></span>
+            <span>Easy - <span class="the-score"></span> </span>
+            <span>Medium - <span class="the-score"></span></span>
+            <span>Hard - <span class="the-score"></span></span>
+            <span>Sicko - <span class="the-score"></span></span>
+        </div>
+        <span class="gen clear-highscores-btn" style="margin-left: 25px;"
+            onclick="clearHighscores()">Clear<br>Highscores</span>
+        </div>
+        <span class="sidenav-open" onclick="openNav()">&#9776;</span>
+
+
+        <div class="table-background">
+        </div>
+
+        <table>
+            <tbody class="table">
+
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+* {
+    margin: 5px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    background-color: lightslategray;
+}
+
+header {
+    font-family: "Lobster", serif;
+    font-size: 30px;
+    color: burlywood;
+}
+
+h3 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.score-text {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: ivory;
+}
+
+.highest-score {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+}
+
+.highest-score-value {
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+}
+
+.sidenav {
+    margin: 0px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav span {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gen:hover {
+    color: #f1f1f1;
+}
+
+.easy-btn:hover {
+    color: green;
+}
+
+.medium-btn:hover {
+    color: yellow;
+}
+
+.hard-btn:hover {
+    color: red;
+}
+
+.sicko-btn:hover {
+    color: purple;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav-open {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 30px;
+    cursor: pointer;
+    color: floralwhite;
+}
+
+.scores-div {
+    position: absolute;
+    top: 500px;
+    left: 40px;
+    cursor: none;
+    margin-left: -25px;
+}
+
+.scores-div span {
+    cursor: none;
+    display: inline-table;
+    padding: 0px;
+}
+
+.clear-highscores-btn {
+    position: absolute;
+    top: 850px;
+    left: 40px;
+}
+
+table {
+    /* border: 1px solid black; */
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.table-background {
+    background-color: salmon;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    color: ivory;
+    text-align: left;
+    padding-left: 20px;
+    height: 400px;
+    width: 350px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px #ccc;
+}
+
+.table-background p {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.table-square {
+    /* border: 1px solid black; */
+    background-color: floralwhite;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    transition-duration: 0.2s;
+    border-radius: 10px;
+}
+
+.table-square:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .85);
+}
